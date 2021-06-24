@@ -1,10 +1,16 @@
 # discreet-physical-delivery-protocol
 Specifications for a Semi-private Snail Mail Network. Implementation via Bitcoin &amp; Lightning.
 
+## Summary 
+Bitcoin's Lightning Network is a major user experience improvement for using bitcoin in a more traditional
+ecommerce setting. However, when buying something which requires physical delivery, you still need to to divulge your physical ship-to address to the merchant, which feels a bit antithetical and, ultimately, unnecessary. Can we figure out how to complement the Lightning Network with a discreet physical delivery protocol?
+
 ## The Problem
 Purchaser Paul wants to, in a reasonably discreet manner, buy a trinket from 
 Merchant Mary by visiting Mary's website. For digital trinkets Paul can pay some
-sats via Bitcoin's lightning network and achieve some reasonable privacy.
+sats via Bitcoin's Lightning Network and achieve some reasonable privacy. The item is
+delivered digitally (perhaps Paul is using a VPN, Tor, etc), and the payment is onion
+routed through the Lightning Network.
 
 However, if the item Paul is purchasing requires Mary to ship it to him in the
 real world, then much of the privacy afforded by paying with lightning is eroded
