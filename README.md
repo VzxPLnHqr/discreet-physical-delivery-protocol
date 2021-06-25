@@ -5,6 +5,9 @@ Specifications for a Semi-private Snail Mail Network. Implementation via Bitcoin
 Bitcoin's Lightning Network is a major user experience improvement for using bitcoin in a more traditional
 ecommerce setting. However, when buying something which requires physical delivery, you still need to to divulge your physical ship-to address to the merchant, which feels a bit antithetical and, ultimately, unnecessary. Can we figure out how to complement the Lightning Network with a discreet physical delivery protocol?
 
+## Contributing
+We welcome contributions and collaboration. Do you have some ideas about how to improve this protocol? Perhaps you simply have questions? Please reach out, open an issue, etc. Open and respectful discussion and iteration is what will allow us to hone in on a useful protocol.
+
 ## The Problem
 Purchaser Paul wants to, in a reasonably discreet manner, buy a trinket from 
 Merchant Mary by visiting Mary's website. For digital trinkets Paul can pay some
@@ -66,9 +69,6 @@ Instead a package could perhaps be "addressed" with an ephemeral identifier whic
 only for the lifetime of this package while it is in transit. Perhaps the package is assigned a
 Tor hidden service and that hidden service is what is "printed" on the label/envelope. Perhaps it is
 simply assigned a public key. Clearly the details here have not yet been worked out.
- 
-## Contributing
-We welcome contributions and collaboration. Do you have some ideas about how to improve this protocol? Perhaps you simply have questions? Please reach out, open an issue, etc. Open and respectful discussion and iteration is what will allow us to hone in on a useful protocol.
 
 ## Some open technical questions
 1. **Are HODL-invoices workable in practice?** There seems to be some concern [3] that hodl invoices as they currently exist on the lightning network are priced incorrectly and hence are not really usable yet for these types of protocols. A successful shipping-over-lightning protocol as contemplated herein, due to its heavy reliance on hodl invoices (which might be outstanding for the duration of the shipping time of the physical good) could confuse some non-participating nodes into thinking they have been fed transactions which will never settle. This needs to be investigated.
