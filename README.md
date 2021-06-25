@@ -59,6 +59,14 @@ However, if the Courier node (Charlie) is in fact independent of Paul and Mary, 
 
 ### With N Couriers
 
+### Observation About Physically Labeling Packages
+We are used to addressing physical mail (envelopes/packages) with a street address
+or some sort of geospatial coordinate system. However, this may not be strictly necessary.
+Instead a package could perhaps be "addressed" with an ephemeral identifier which exists
+only for the lifetime of this package while it is in transit. Perhaps the package is assigned a
+Tor hidden service and that hidden service is what is "printed" on the label/envelope. Perhaps it is
+simply assigned a public key. Clearly the details here have not yet been worked out.
+ 
 ## Contributing
 We welcome contributions and collaboration. Do you have some ideas about how to improve this protocol? Perhaps you simply have questions? Please reach out, open an issue, etc. Open and respectful discussion and iteration is what will allow us to hone in on a useful protocol.
 
