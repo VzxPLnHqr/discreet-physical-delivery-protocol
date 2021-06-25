@@ -59,14 +59,21 @@ However, if the Courier node (Charlie) is in fact independent of Paul and Mary, 
 
 ### With N Couriers
 
+## Contributing
+We welcome contributions and collaboration. Do you have some ideas about how to improve this protocol? Perhaps you simply have questions? Please reach out, open an issue, etc. Open and respectful discussion and iteration is what will allow us to hone in on a useful protocol.
+
 ## Some open technical questions
 1. **Are HODL-invoices workable in practice?** There seems to be some concern [3] that hodl invoices as they currently exist on the lightning network are priced incorrectly and hence are not really usable yet for these types of protocols. A successful shipping-over-lightning protocol as contemplated herein, due to its heavy reliance on hodl invoices (which might be outstanding for the duration of the shipping time of the physical good) could confuse some non-participating nodes into thinking they have been fed transactions which will never settle. This needs to be investigated.
 2. **Can Taproot help at all?** After November, 2021 it is anticipated that the bitcoin network will have fully activated Taproot. This may enable some features on lightning (if so, which ones?) that may resolve some of the issues around hodl invoices, etc?
-3. **How to coordinate the Courier nodes (i.e. the routing problem)?** Perhaps, as a start, a couple "meta couriers" operate essentially a (tor hidden service?) bulletin board where other couriers can view/post hashes of the `parcelids` they can route to? Since `parcelids` are single-use (have an expiration?), this might be workable. Still need to get the incentives correct. Eventually this portion could be replaced with a p2p protocol. 
+3. **How to coordinate the Courier nodes (i.e. the routing problem)?** Perhaps, as a start, a couple "meta couriers" operate essentially a (tor hidden service?) bulletin board where other couriers can view/post hashes of the `parcelids` they can route to? Since `parcelids` are single-use (have an expiration?), this might be workable. Still need to get the incentives correct. Eventually this portion could be replaced with a p2p protocol.
+4. **Allow Purchaser to delegate finalization of transaction (perhaps to Courier)?** Right now the protocol would require that the Purchaser be avaialbe to give `preimage` to Courier. However, in the traditional package-delivery world, it is often more convenient to allow the Courier to simply leave the package on the doorstep, etc. Obviously, this requires more trust in the Courier, but since you are already trusting the courier with your physical location/address, perhaps that is not a problem? Yet, giving the Courier `preimage` too early will allow Courier to settle its invoice with Merchant. If Merchant has not even shipped the item yet, then there is some moral hazard here.
 
 ## Some high-level UI/UX goals
 * fit it into the traditional e-commerce workflow as much as possible
 * bonus points if the shipping protocol API offered by a network Courier is essentially the same as that offered by existing large shipping/logisitcs companies
+* for someone who sells items intermittently, such as artwork, it should be extremely easy to put up a simple website, offer the item for sale, collect lightning as payment and a `parcelid` as shipping address, and done.
+* create some end-to-end examples for people to get started quickly
+* do not try to do too much -- this is a shipping/logistics protocol, not a full e-commerce protocol
 
 ## ACKs & Links
 By no means do we claim to be the first to think about these things. Therefore, as
