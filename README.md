@@ -86,3 +86,7 @@ contemplated herein.
 [2] https://cointelegraph.com/news/ledger-data-leak-a-simple-mistake-exposed-270k-crypto-wallet-buyers
 
 [3] https://lists.linuxfoundation.org/pipermail/lightning-dev/2021-February/002958.html
+
+### Other attempts
+
+[4] https://medium.com/paket-global -- this project seems to have gone dark. From what we gather, they were attempting to do it more on-chain (not using bitcoin or lightning).
