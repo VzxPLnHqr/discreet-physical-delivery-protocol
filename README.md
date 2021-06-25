@@ -59,6 +59,11 @@ However, if the Courier node (Charlie) is in fact independent of Paul and Mary, 
 
 ### With N Couriers
 
+## Some open technical questions
+1. **Are HODL-invoices workable in practice?** There seems to be some concern [3] that hodl invoices as they currently exist on the lightning network are priced incorrectly and hence are not really usable yet for these types of protocols. A successful shipping-over-lightning protocol as contemplated herein, due to its heavy reliance on hodl invoices (which might be outstanding for the duration of the shipping time of the physical good) could confuse some non-participating nodes into thinking they have been fed transactions which will never settle. This needs to be investigated.
+2. **Can Taproot help at all?** After November, 2021 it is anticipated that the bitcoin network will have fully activated Taproot. This may enable some features on lightning (if so, which ones?) that may resolve some of the issues around hodl invoices, etc?
+3. **How to coordinate the Courier nodes (i.e. the routing problem)?** Perhaps, as a start, a couple "meta couriers" operate essentially a (tor hidden service?) bulletin board where other couriers can view/post hashes of the `parcelids` they can route to? Since `parcelids` are single-use (have an expiration?), this might be workable. Still need to get the incentives correct. Eventually this portion could be replaced with a p2p protocol. 
+
 ## Some high-level UI/UX goals
 * fit it into the traditional e-commerce workflow as much as possible
 * bonus points if the shipping protocol API offered by a network Courier is essentially the same as that offered by existing large shipping/logisitcs companies
@@ -72,3 +77,5 @@ contemplated herein.
 [1] https://wiki.ion.radar.tech/tech/research/hodl-invoice
 
 [2] https://cointelegraph.com/news/ledger-data-leak-a-simple-mistake-exposed-270k-crypto-wallet-buyers
+
+[3] https://lists.linuxfoundation.org/pipermail/lightning-dev/2021-February/002958.html
