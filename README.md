@@ -8,6 +8,9 @@ ecommerce setting. However, when buying something which requires physical delive
 ## Contributing
 We welcome contributions and collaboration. Do you have some ideas about how to improve this protocol? Perhaps you simply have questions? Please reach out, open an issue, etc. Open and respectful discussion and iteration is what will allow us to hone in on a useful protocol.
 
+### Discussion
+* Mailing List Discussion (Lightning-Dev): https://lists.linuxfoundation.org/pipermail/lightning-dev/2021-June/003065.html
+
 ## The Problem
 Purchaser Paul wants to, in a reasonably discreet manner, buy a trinket from 
 Merchant Mary by visiting Mary's website. For digital trinkets Paul can pay some
