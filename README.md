@@ -5,6 +5,9 @@ Specifications for a Semi-private Snail Mail Network. Implementation via Bitcoin
 Bitcoin's Lightning Network is a major user experience improvement for using bitcoin in a more traditional
 ecommerce setting. However, when buying something which requires physical delivery, you still need to to divulge your physical ship-to address to the merchant, which feels a bit antithetical and, ultimately, unnecessary. Can we figure out how to complement the Lightning Network with a discreet physical delivery protocol?
 
+## Status (as of July 2021): REQUIRES MORE DEEP THINKING
+See mailing list discussion.
+
 ## Contributing
 We welcome contributions and collaboration. Do you have some ideas about how to improve this protocol? Perhaps you simply have questions? Please reach out, open an issue, etc. Open and respectful discussion and iteration is what will allow us to hone in on a useful protocol.
 
