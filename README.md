@@ -5,10 +5,13 @@ Specifications for a Semi-private Snail Mail Network. Implementation via Bitcoin
 Bitcoin's Lightning Network is a major user experience improvement for using bitcoin in a more traditional
 ecommerce setting. However, when buying something which requires physical delivery, you still need to to divulge your physical ship-to address to the merchant, which feels a bit antithetical and, ultimately, unnecessary. Can we figure out how to complement the Lightning Network with a discreet physical delivery protocol?
 
-## Status (as of July 2021): REQUIRES MORE DEEP THINKING
+## Status (as of September 2021): REQUIRES MORE DEEP THINKING
 See mailing list discussion. Bitcoin/lightning developer ZmnSCPxj pointed out that the on-demand nature of the protocol contemplated here
 may make it difficult to implement in the real world. This is primarily because packages may be in transit, and hence unsettled invoices 
 might be outstanding, longer than the existing lightning network will allow. This is unfortunate and requires some deep thought. 
+
+It may be worth considering piggybacking on top of [iris.to](https://iris.to) and/or [nostr](https://github.com/fiatjaf/nostr) and/or [sphinx.chat](https://sphinx.chat).
+as the coordination layer. These projects seem to be tackling the censorship-resitance distributed messaging challenges. @fiatjaf's Nostr protocol may be closest to what we need.
 
 ## Contributing
 We welcome contributions and collaboration. Do you have some ideas about how to improve this protocol? Perhaps you simply have questions? Please reach out, open an issue, etc. Open and respectful discussion and iteration is what will allow us to hone in on a useful protocol.
