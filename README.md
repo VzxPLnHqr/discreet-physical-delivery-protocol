@@ -107,6 +107,8 @@ contemplated herein.
 
 [3] https://lists.linuxfoundation.org/pipermail/lightning-dev/2021-February/002958.html
 
+[4] Here's a "thought piece modeled after a scientific publication from the year 2030" regarding private delivery networks. It presents some similar ideas: [thought piece](https://www.media.mit.edu/posts/nomadic-systems/) (thanks to @mmalmi for contributing the link)
+
 ### Other attempts
 
 [4] https://medium.com/paket-global -- this project seems to have gone dark. From what we gather, they were attempting to do it more on-chain (not using bitcoin or lightning).
