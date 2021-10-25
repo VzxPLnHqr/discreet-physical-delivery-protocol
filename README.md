@@ -10,8 +10,10 @@ See mailing list discussion. Bitcoin/lightning developer ZmnSCPxj pointed out th
 may make it difficult to implement in the real world. This is primarily because packages may be in transit, and hence unsettled invoices 
 might be outstanding, longer than the existing lightning network will allow. This is unfortunate and requires some deep thought. 
 
-It may be worth considering piggybacking on top of [iris.to](https://iris.to) and/or [nostr](https://github.com/fiatjaf/nostr) and/or [sphinx.chat](https://sphinx.chat).
+September 2021 - It may be worth considering piggybacking on top of [iris.to](https://iris.to) and/or [nostr](https://github.com/fiatjaf/nostr) and/or [sphinx.chat](https://sphinx.chat).
 as the coordination layer. These projects seem to be tackling the censorship-resitance distributed messaging challenges. @fiatjaf's Nostr protocol may be closest to what we need.
+
+October 2021 - If a different type of lightning network is needed, but still on bitcoin, perhaps the privacy-focused lightning implementation [IMMORTAN](https://github.com/btcontract/IMMORTAN) would be helpful?
 
 ## Contributing
 We welcome contributions and collaboration. Do you have some ideas about how to improve this protocol? Perhaps you simply have questions? Please reach out, open an issue, etc. Open and respectful discussion and iteration is what will allow us to hone in on a useful protocol.
